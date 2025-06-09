@@ -37,14 +37,18 @@ int main(){
 			else
 				printf("Buffer is full!\n");
 			break;
+
 			case 2:
 			if((mutex == 1)&&(full!=0))
 				consumer();
 			else
 				printf("Buffer is empty!\n");
 			break;
+			
 			case 3:
-			exit(0);			default:
+			exit(0);	
+			
+			default:
 			printf("Invalid choice! Please enter 1,2 or 3.\n");
 		}
 	}
