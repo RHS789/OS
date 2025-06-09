@@ -44,3 +44,29 @@ int main(){
 		printf("P%d\t\t%d\t\t%d\t\t%d\n",processID[i],BurstTime[i],WaitingTime[i],TurnAroundTime[i]);
 	}
 }
+
+
+/*
+
+output:
+
+
+Enter Number of Processes: 4
+Enter Burst Time and Priority Value for Process 1: 6 3
+Enter Burst Time and Priority Value for Process 2: 8 1
+Enter Burst Time and Priority Value for Process 3: 7 4
+Enter Burst Time and Priority Value for Process 4: 3 2
+Order of process Execution is
+P3 is executed from 0 to 7
+P1 is executed from 7 to 13
+P4 is executed from 13 to 16
+P2 is executed from 16 to 24
+
+Process Id	Burst Time	Wait Time	Turnaround Time
+	P3			7			0			7
+	P1			6			7			13
+	P4			3			13			16
+	P2			8			16			24
+
+
+*/
